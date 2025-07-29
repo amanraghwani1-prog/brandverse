@@ -1,0 +1,195 @@
+/* styles.css */
+
+/* Reset and font */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f0f4f8;
+  color: #1e293b;
+}
+
+/* Navbar */
+.navbar {
+  background: #14213d;
+  color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo .logo-text {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fca311;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: #f8f9fa;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #fca311;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #fca311 0%, #e5e5e5 100%);
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #14213d;
+}
+
+.hero-description {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: #14213d;
+  color: #fca311;
+  margin-right: 1rem;
+}
+
+.btn-primary:hover {
+  background: #0f172a;
+}
+
+.btn-secondary {
+  background: #fca311;
+  color: #14213d;
+}
+
+.btn-secondary:hover {
+  background: #ffb703;
+}
+
+/* Section headers */
+.section-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #14213d;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #334155;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Services */
+.services-grid, .team-grid, .case-grid, .contact-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.service-card, .case-card, .team-card, .contact-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover, .case-card:hover, .team-card:hover, .contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-icon, .contact-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fca311;
+}
+
+/* Case Study Logos */
+.case-logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/* Team */
+.team-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Contact */
+.contact-card i {
+  color: #14213d;
+}
+
+/* Footer */
+.footer {
+  background: #14213d;
+  color: white;
+  text-align: center;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+}
+
+.footer a {
+  color: #fca311;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    margin-top: 1rem;
+  }
+}
+.case-logo {
+  max-width: 120px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
